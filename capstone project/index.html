@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PayFlex — Smart Payments. Simplified.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">PayFlex</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <a href="#">Support</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a class="btn btn--primary header__cta" href="#">Get Started</a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1>Smart Payments. Simplified.</h1>
+      <p class="subtitle">Seamless financial operations for your business.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#">Start Free Trial</a>
+        <a class="btn btn--ghost" href="#">See Demo</a>
+      </div>
+      <div class="brands">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="VISA logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal logo" />
+      </div>
+    </div>
+    <div class="hero__bg"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2>Powerful features for modern businesses</h2>
+      <div class="grid grid--3">
+        <div class="card">
+          <div class="icon">lock</div>
+          <h3>Secure Transactions</h3>
+          <p>End-to-end encryption and fraud detection keep your payments safe and compliant.</p>
+        </div>
+        <div class="card">
+          <div class="icon">API</div>
+          <h3>API Integration</h3>
+          <p>Easily integrate with existing systems for a seamless experience.</p>
+        </div>
+        <div class="card">
+          <div class="icon">Mobile</div>
+          <h3>Mobile App</h3>
+          <p>Manage payments on the go with our intuitive mobile app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--alt">
+    <div class="container">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <h4>Sign Up</h4>
+          <p>Create your PayFlex account.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <h4>Connect Accounts</h4>
+          <p>Link your bank and payment accounts.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <h4>Start Transacting</h4>
+          <p>Send, receive, and manage transactions securely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container analytics">
+      <div class="analytics__text">
+        <h2>Gain insights with real-time analytics</h2>
+        <ul class="checklist">
+          <li>Monitor transactions</li>
+          <li>Track revenue</li>
+          <li>Analyze customer behavior</li>
+          <li>Optimize financial performance</li>
+        </ul>
+      </div>
+      <div class="analytics__viz">
+        <div class="viz-card">
+          <div class="viz-bar" style="--h: 65%"></div>
+          <div class="viz-bar" style="--h: 80%"></div>
+          <div class="viz-bar" style="--h: 50%"></div>
+          <div class="viz-bar" style="--h: 90%"></div>
+        </div>
+        <p class="viz-caption">Live KPIs updating in real time</p>
+      </div>
+    </div>
+  </section>
+  <section class="section section--alt">
+    <div class="container">
+      <h2>Simple, transparent pricing</h2>
+      <div class="grid grid--2 pricing">
+        <div class="price-card">
+          <h3>Basic</h3>
+          <p class="price"><span class="price__amount">$19</span> <span class="price__period">/mo</span></p>
+          <ul class="features-list">
+            <li>Core payment processing</li>
+            <li>Standard security & compliance</li>
+            <li>Basic analytics dashboard</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="#">Choose Basic</a>
+        </div>
+        <div class="price-card price-card--pro">
+          <div class="badge">Most popular</div>
+          <h3>Pro</h3>
+          <p class="price"><span class="price__amount">$49</span> <span class="price__period">/mo</span></p>
+          <ul class="features-list">
+            <li>Advanced fraud detection</li>
+            <li>Priority support</li>
+            <li>Full API access</li>
+            <li>Real-time analytics & reports</li>
+          </ul>
+          <a class="btn btn--dark btn--full" href="#">Choose Pro</a>
+        </div>
+      </div>
+      <p class="pricing-note">No setup fees. Cancel anytime.</p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo">PayFlex</div>
+      <p>© 2025 PayFlex. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav--open');
+      burger.classList.toggle('hamburger--open');
+    });
+  </script>
+</body>
+
+</html>
